@@ -1,3 +1,1 @@
-rootProject.name = "vertx-aerospike-context-event-loop"
-
-
+rootProject.name = "vertx-aerospike-client"
