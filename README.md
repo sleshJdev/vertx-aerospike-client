@@ -6,7 +6,7 @@
 ### Code examples
 
 
-Using old-fashion callback based client
+#### Using old-fashion callback based client
 ```java
 class OldFashionDemo {
     @Test
@@ -66,7 +66,7 @@ Cons:
 * Lack of flexibility
 
 
-Using future based client
+#### Using future based client
 ```java
 class NewApiDemo {
     @Test
