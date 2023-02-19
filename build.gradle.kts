@@ -38,7 +38,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            uri("https://maven.pkg.github.com/sleshJdev/vertx-aerospike-client")
+            url = uri("https://maven.pkg.github.com/sleshJdev/vertx-aerospike-client")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
