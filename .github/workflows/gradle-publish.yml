@@ -24,7 +24,6 @@ jobs:
         server-id: GitHubPackages # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
         cache: 'gradle'
-    - run: echo "${{ github.actor }}"
     - name: Publish to GitHub Packages
       run: ./gradlew publish --no-daemon
       env:
