@@ -3,6 +3,44 @@
 * Provides future based implementation of async aerospike client (AsyncAerospikeClient -> VertxAerospikeClient)
 * Extends the aerospike's event loops to be aware about vert'x context event loop and use whenever it's possible
 
+
+### Installation
+
+#### Maven
+```xml
+<dependencies>
+    <dependency>
+        <groupId>dev.slesh</groupId>
+        <artifactId>vertx-aerospike-client</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.vertx</groupId>
+        <artifactId>vertx-core</artifactId>
+        <version>4.3.8</version>
+    </dependency>
+    <dependency>
+        <groupId>com.aerospike</groupId>
+        <artifactId>aerospike-client</artifactId>
+        <version>6.0.0</version>
+    </dependency>
+</dependencies>
+```
+
+#### Gradle
+
+```kotlin
+repositories {
+    mavenCentral()
+}
+
+implementation("dev.slesh:vertx-aerospike-client:1.0.0")
+implementation("io.vertx:vertx-core:4.3.8")
+implementation("com.aerospike:aerospike-client:6.0.0")
+```
+
+The library doesn't bring transitive dependencies like `vert.x-core` or `aeropspike-client` so you have to install them explicitly.
+
 ### Code examples
 
 
